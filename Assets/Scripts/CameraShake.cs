@@ -1,8 +1,5 @@
 using Cinemachine;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-using Cinemachine;
 
 public class CameraShake : MonoBehaviour
 {
@@ -26,7 +23,6 @@ public class CameraShake : MonoBehaviour
 
         if (shakeTimer <= 0f)
         {
-            // Time over!
             CinemachineBasicMultiChannelPerlin cinemachineBasicMultiChannelPerlin = cinemachineVirtualCamera.GetCinemachineComponent<CinemachineBasicMultiChannelPerlin>();
             cinemachineBasicMultiChannelPerlin.m_AmplitudeGain = 0f;
         }

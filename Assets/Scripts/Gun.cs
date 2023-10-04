@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -8,6 +6,7 @@ public class Gun : MonoBehaviour
     [SerializeField] private float range = 100f;
     [SerializeField] private Camera fpsCam;
     [SerializeField] private AudioSource gunSound;
+    [SerializeField] private float damage = 20f;
 
     private void Awake()
     {
@@ -26,7 +25,12 @@ public class Gun : MonoBehaviour
         {
             if(hit.transform.CompareTag("Enemy"))
             {
-                hit.transform.gameObject.GetComponentInChildren<ParticleSystem>().Play();
+                Component damageable = hit.transform.GetComponent(typeof(IDamageable));
+                if(damageable)
+                {
+                    GameFunctions.Attack(damageable, damage);
+                    hit.transform.gameObject.GetComponentInChildren<ParticleSystem>().Play();
+                }
             }
         }
     }
