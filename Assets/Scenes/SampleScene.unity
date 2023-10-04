@@ -122,7 +122,7 @@ NavMeshSettings:
     preserveTilesOutsideBounds: 0
     debug:
       m_Flags: 0
-  m_NavMeshData: {fileID: 0}
+  m_NavMeshData: {fileID: 23800000, guid: 46bad8ff2cda6d946b833bea39cea8a0, type: 2}
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0
@@ -237,6 +237,14 @@ PrefabInstance:
       propertyPath: m_PivotOffset.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5126527961139664760, guid: 075a7f6cce9cd8f4299019ba1a75f3f7, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -22.210217
+      objectReference: {fileID: 0}
+    - target: {fileID: 5126527961139664760, guid: 075a7f6cce9cd8f4299019ba1a75f3f7, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 10.161317
+      objectReference: {fileID: 0}
     - target: {fileID: 6556307555316582679, guid: 075a7f6cce9cd8f4299019ba1a75f3f7, type: 3}
       propertyPath: m_LocalPosition.x
       value: 21.65
@@ -281,6 +289,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 7094977340588366727, guid: 075a7f6cce9cd8f4299019ba1a75f3f7, type: 3}
+      propertyPath: m_TagString
+      value: Player
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -306,7 +318,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!64 &986852365
 MeshCollider:
@@ -607,7 +619,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4596673609994361275, guid: c242eb37e61c36247b7ff67a5f4c571d, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4596673609994361275, guid: c242eb37e61c36247b7ff67a5f4c571d, type: 3}
       propertyPath: m_LocalPosition.z
@@ -642,7 +654,8 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 4269749926561711860, guid: c242eb37e61c36247b7ff67a5f4c571d, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c242eb37e61c36247b7ff67a5f4c571d, type: 3}
