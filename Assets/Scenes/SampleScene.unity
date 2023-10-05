@@ -609,9 +609,17 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1164410734923848003, guid: c242eb37e61c36247b7ff67a5f4c571d, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3520534456218238905, guid: c242eb37e61c36247b7ff67a5f4c571d, type: 3}
       propertyPath: m_Name
       value: Enemy
+      objectReference: {fileID: 0}
+    - target: {fileID: 4021899341644364161, guid: c242eb37e61c36247b7ff67a5f4c571d, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4596673609994361275, guid: c242eb37e61c36247b7ff67a5f4c571d, type: 3}
       propertyPath: m_LocalPosition.x
