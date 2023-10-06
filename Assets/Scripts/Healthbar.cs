@@ -6,7 +6,7 @@ public class Healthbar : MonoBehaviour
     [SerializeField] EnemyHealth enemyHealth;
     [SerializeField] Image foreground;
 
-    void Update()
+    private void Update()
     {
         foreground.fillAmount = enemyHealth.health / enemyHealth.maxHealth;
     }

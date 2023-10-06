@@ -16,7 +16,6 @@ public class EnemyHealth: MonoBehaviour, IDamageable
     {
         if (health <= 0 && !isDead)
         {
-            //Destroy(gameObject, 4f);
             gameObject.SetActive(false);
             isDead = true;
         }

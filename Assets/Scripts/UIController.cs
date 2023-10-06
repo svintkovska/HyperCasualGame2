@@ -25,6 +25,7 @@ public class UIController : MonoBehaviour
         InputManager inputManager = new InputManager();
         inputManager.Player.Enable();
         inputManager.Player.SwapWeapon.performed += SwapWeapon;
+        _enemiesToShoot = _enemiesToShootValue;
     }
 
     private void Update()
@@ -32,7 +33,7 @@ public class UIController : MonoBehaviour
         _gameTime += Time.deltaTime;
         var loseTimeDiffGameTime = _timeToLoseValue - _gameTime;
         _timeToLose.text = $"Time : {((int)loseTimeDiffGameTime)} sec";
-
+        _enemiesToShootText.text = $"Enemies: {_enemiesToShoot}";
         ammoText.text = $"{ammo[currentGunIndex].GetCurrentAmmo()}/{ammo[currentGunIndex].GetMaxAmmo()}";
         clipText.text = $"{ammo[currentGunIndex].GetCurrentClips()}";
     }
