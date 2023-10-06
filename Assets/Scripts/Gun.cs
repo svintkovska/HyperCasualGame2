@@ -71,7 +71,6 @@ public class Gun : MonoBehaviour
                 {
                     GameFunctions.Attack(damageable, damage);
                     hit.transform.gameObject.GetComponentInChildren<ParticleSystem>().Play();
-                    hit.transform.gameObject.GetComponent<EnemyAI>().OnDamageTaken();
                 }
             }
         }
