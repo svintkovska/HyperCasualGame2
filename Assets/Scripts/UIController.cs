@@ -5,11 +5,7 @@ using UnityEngine.InputSystem;
 
 public class UIController : MonoBehaviour
 {
-    [Header("Scripts")]
-    [SerializeField] private Ammunition ammo;
-    //[SerializeField] private PlayerBehaviour playerBehaviour;
-
-    [Header("UI Elements")]
+    [SerializeField] private Ammunition[] ammo;
     [SerializeField] private TMP_Text _timeToLose;
     [SerializeField] private int _timeToLoseValue;
     [SerializeField] private TMP_Text _enemiesToShootText;
@@ -37,28 +33,24 @@ public class UIController : MonoBehaviour
         var loseTimeDiffGameTime = _timeToLoseValue - _gameTime;
         _timeToLose.text = $"Time : {((int)loseTimeDiffGameTime)} sec";
 
-        ammoText.text = ammo.GetCurrentAmmo() + "/30";
-        clipText.text = ammo.GetCurrentClips().ToString();
-        //ammoText.SetText($"{ammo[currentGunIndex].GetCurrentAmmo()}/{ammo[currentGunIndex].GetMaxAmmo()}");
-        //clipText.SetText($"{ammo[currentGunIndex].GetCurrentClips()}");
+        ammoText.text = $"{ammo[currentGunIndex].GetCurrentAmmo()}/{ammo[currentGunIndex].GetMaxAmmo()}";
+        clipText.text = $"{ammo[currentGunIndex].GetCurrentClips()}";
     }
 
     private void SwapWeapon(InputAction.CallbackContext context)
     {
         if (context.control.displayName == "1")
         {
-            gunImage.sprite = gunSprites[0];
-            //currentGunIndex = 0;
-            //gunImage.sprite = gunSprites[currentGunIndex];
-            //GameManager.Instance.ActivateWeaponObject(currentGunIndex);
+            currentGunIndex = 0;
+            gunImage.sprite = gunSprites[currentGunIndex];
+            GameManager.Instance.ActivateWeaponObject(currentGunIndex);
         }
         else if (context.control.displayName == "2")
         {
-            gunImage.sprite = gunSprites[1];
 
-            //currentGunIndex = 1;
-            //gunImage.sprite = gunSprites[currentGunIndex];
-            //GameManager.Instance.ActivateWeaponObject(currentGunIndex);
+            currentGunIndex = 1;
+            gunImage.sprite = gunSprites[currentGunIndex];
+            GameManager.Instance.ActivateWeaponObject(currentGunIndex);
         }
     }
 }
