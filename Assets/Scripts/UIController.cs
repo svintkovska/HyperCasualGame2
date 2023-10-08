@@ -3,6 +3,7 @@ using TMPro;
 using UnityEngine.UI;
 using UnityEngine.InputSystem;
 using UnityEngine.Rendering;
+using UnityEngine.SceneManagement;
 
 public class UIController : MonoBehaviour
 {
@@ -16,6 +17,11 @@ public class UIController : MonoBehaviour
     [SerializeField] private TMP_Text ammoText;
     [SerializeField] private TMP_Text clipText;
     [SerializeField] private Image gunImage;
+    [SerializeField] private Image _background;
+    [SerializeField] private TMP_Text _winText;
+    [SerializeField] private Button _nextLvlBtn;
+    [SerializeField] private TMP_Text _loseText;
+    [SerializeField] private Button _restartBtn;
     [SerializeField] private Sprite[] gunSprites;
 
     private float _gameTime;
@@ -24,15 +30,18 @@ public class UIController : MonoBehaviour
 
     private void Awake()
     {
-        if (Instance == null)
-        {
-            Instance = this;
-            DontDestroyOnLoad(gameObject);
-        }
-        else
-        {
-            Destroy(gameObject);
-        }      
+        Time.timeScale = 1f;
+        Instance = this;
+
+        //if (Instance == null)
+        //{
+        //    Instance = this;
+        //    DontDestroyOnLoad(gameObject);
+        //}
+        //else
+        //{
+        //    Destroy(gameObject);
+        //}      
     }
 
     private void Start()
@@ -44,11 +53,10 @@ public class UIController : MonoBehaviour
     }
     private void Update()
     {
+        LoseCheck();
+
         CheckWin();
 
-        _gameTime += Time.deltaTime;
-        var loseTimeDiffGameTime = _timeToLoseValue - _gameTime;
-        _timeToLose.text = $"Time : {((int)loseTimeDiffGameTime)} sec";
         _enemiesToShootText.text = $"Enemies: {_enemiesToShoot}";
         ammoText.text = $"{ammo[currentGunIndex].GetCurrentAmmo()}/{ammo[currentGunIndex].GetMaxAmmo()}";
         clipText.text = $"{ammo[currentGunIndex].GetCurrentClips()}";
@@ -81,7 +89,29 @@ public class UIController : MonoBehaviour
     {
         if (_enemiesToShoot <= 0 && _gameTime < _timeToLoseValue)
         {
-            Debug.Log("You win!");
+            _background.gameObject.SetActive(true);
+            _winText.gameObject.SetActive(true);
+            _nextLvlBtn.gameObject.SetActive(true);
+            Time.timeScale = 0f;
         }
+    }
+    private void LoseCheck()
+    {
+        _gameTime += Time.deltaTime;
+        var loseTimeDiffGameTime = _timeToLoseValue - _gameTime;
+        _timeToLose.text = $"Time to lose: {((int)loseTimeDiffGameTime)}";
+
+        if (_gameTime >= _timeToLoseValue && _enemiesToShoot > 0)
+        {
+            _background.gameObject.SetActive(true);
+            _loseText.gameObject.SetActive(true);
+            _restartBtn.gameObject.SetActive(true);
+            Time.timeScale = 0f;
+        }
+    }
+
+    public void LoadScene(int sceneNumber)
+    {
+        SceneManager.LoadScene(sceneNumber);
     }
 }
