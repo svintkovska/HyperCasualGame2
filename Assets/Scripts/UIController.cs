@@ -2,7 +2,6 @@ using UnityEngine;
 using TMPro;
 using UnityEngine.UI;
 using UnityEngine.InputSystem;
-using UnityEngine.Rendering;
 using UnityEngine.SceneManagement;
 
 public class UIController : MonoBehaviour
@@ -31,17 +30,7 @@ public class UIController : MonoBehaviour
     private void Awake()
     {
         Time.timeScale = 1f;
-        Instance = this;
-
-        //if (Instance == null)
-        //{
-        //    Instance = this;
-        //    DontDestroyOnLoad(gameObject);
-        //}
-        //else
-        //{
-        //    Destroy(gameObject);
-        //}      
+        Instance = this;     
     }
 
     private void Start()
@@ -113,5 +102,10 @@ public class UIController : MonoBehaviour
     public void LoadScene(int sceneNumber)
     {
         SceneManager.LoadScene(sceneNumber);
+    }
+
+    public void ExitGame()
+    {
+        Application.Quit();
     }
 }
