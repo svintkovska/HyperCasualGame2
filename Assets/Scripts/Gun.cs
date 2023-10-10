@@ -3,8 +3,8 @@ using UnityEngine.InputSystem;
 
 public class Gun : MonoBehaviour
 {
-    [SerializeField] private float damage = 20f;
-    [SerializeField] private float fireRate = 0.1f;
+    [SerializeField] private float damage;
+    [SerializeField] private float fireRate;
     [SerializeField] private bool isAutomatic;
     [SerializeField] private Transform cameraRoot;
     [SerializeField] private Camera fpsCam;

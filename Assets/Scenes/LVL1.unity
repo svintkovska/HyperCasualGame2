@@ -3481,6 +3481,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5097372243569151713, guid: 075a7f6cce9cd8f4299019ba1a75f3f7, type: 3}
+      propertyPath: clips
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 5126527961139664760, guid: 075a7f6cce9cd8f4299019ba1a75f3f7, type: 3}
       propertyPath: m_LocalPosition.x
       value: -22.21022
@@ -3548,6 +3552,18 @@ PrefabInstance:
     - target: {fileID: 7094977340588366727, guid: 075a7f6cce9cd8f4299019ba1a75f3f7, type: 3}
       propertyPath: m_Name
       value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 9024495303930409892, guid: 075a7f6cce9cd8f4299019ba1a75f3f7, type: 3}
+      propertyPath: clips
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9024495303930409892, guid: 075a7f6cce9cd8f4299019ba1a75f3f7, type: 3}
+      propertyPath: ammoAmount
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 9024495303930409892, guid: 075a7f6cce9cd8f4299019ba1a75f3f7, type: 3}
+      propertyPath: reloadAmount
+      value: 15
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -7977,9 +7993,9 @@ MonoBehaviour:
   - {fileID: 298307671}
   - {fileID: 150044418}
   _timeToLose: {fileID: 57514571}
-  _timeToLoseValue: 30
+  _timeToLoseValue: 50
   _enemiesToShootText: {fileID: 1100072160}
-  _enemiesToShootValue: 1
+  _enemiesToShootValue: 5
   ammoText: {fileID: 1605169272}
   clipText: {fileID: 1008876948}
   gunImage: {fileID: 1648355265}

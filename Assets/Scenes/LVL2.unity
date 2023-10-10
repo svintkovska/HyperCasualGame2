@@ -5324,7 +5324,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &199850857
 RectTransform:
   m_ObjectHideFlags: 0
@@ -17843,7 +17843,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &621240539
 RectTransform:
   m_ObjectHideFlags: 0
@@ -23645,6 +23645,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5097372243569151713, guid: 075a7f6cce9cd8f4299019ba1a75f3f7, type: 3}
+      propertyPath: clips
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 5126527961139664760, guid: 075a7f6cce9cd8f4299019ba1a75f3f7, type: 3}
       propertyPath: m_LocalPosition.x
       value: -22.210228
@@ -23712,6 +23716,18 @@ PrefabInstance:
     - target: {fileID: 7094977340588366727, guid: 075a7f6cce9cd8f4299019ba1a75f3f7, type: 3}
       propertyPath: m_Name
       value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 9024495303930409892, guid: 075a7f6cce9cd8f4299019ba1a75f3f7, type: 3}
+      propertyPath: clips
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9024495303930409892, guid: 075a7f6cce9cd8f4299019ba1a75f3f7, type: 3}
+      propertyPath: ammoAmount
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 9024495303930409892, guid: 075a7f6cce9cd8f4299019ba1a75f3f7, type: 3}
+      propertyPath: reloadAmount
+      value: 15
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -36784,7 +36800,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1303010956
 RectTransform:
   m_ObjectHideFlags: 0
@@ -58762,17 +58778,17 @@ MonoBehaviour:
   - {fileID: 298307671}
   - {fileID: 150044418}
   _timeToLose: {fileID: 57514571}
-  _timeToLoseValue: 1000
+  _timeToLoseValue: 60
   _enemiesToShootText: {fileID: 1100072160}
   _enemiesToShootValue: 7
   ammoText: {fileID: 1605169272}
   clipText: {fileID: 1008876948}
   gunImage: {fileID: 1648355265}
-  _background: {fileID: 0}
-  _winText: {fileID: 0}
-  _nextLvlBtn: {fileID: 0}
-  _loseText: {fileID: 0}
-  _restartBtn: {fileID: 0}
+  _background: {fileID: 199850858}
+  _winText: {fileID: 368499585}
+  _nextLvlBtn: {fileID: 1303010957}
+  _loseText: {fileID: 621240540}
+  _restartBtn: {fileID: 569496212}
   gunSprites:
   - {fileID: 21300000, guid: aa4875218da641d4183a2a9ab38cce22, type: 3}
   - {fileID: 21300000, guid: 6ab60d8241db3fa4199660695391cfc5, type: 3}

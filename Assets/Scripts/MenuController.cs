@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -12,7 +10,6 @@ public class MenuController : MonoBehaviour
     [SerializeField] Button _controlsBtn;
     [SerializeField] Button _exitBtn;
     [SerializeField] Image _infoBox;
-
     [SerializeField] TMP_Text _rulesText;
     [SerializeField] TMP_Text _controlsText;
 

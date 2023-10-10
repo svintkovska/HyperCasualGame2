@@ -3,9 +3,9 @@ using UnityEngine.InputSystem;
 
 public class Ammunition : MonoBehaviour
 {
-    [SerializeField] private int ammoAmount = 10;
-    [SerializeField] private int reloadAmount = 10;
-    [SerializeField] private int clips = 5;
+    [SerializeField] private int ammoAmount;
+    [SerializeField] private int reloadAmount;
+    [SerializeField] private int clips;
 
     private int maxAmmo;
     private InputManager inputManager;
