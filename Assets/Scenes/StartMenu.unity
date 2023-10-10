@@ -635,7 +635,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &321272132
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -656,10 +656,10 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "                                          Mouse Controls:\n\n                    
+  m_text: "                                          Mouse Controls:\n\n                   
     Shoot\n(Hold for a few seconds to enable automatic fire for rifle)\n\n                                      
     Keyboard Controls:\n      Reload Clips\n      Switch to Rifle\n      Switch to
-    Pistol\n                                            Movement"
+    Pistol\n                                          Movement"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 2bce98e747db7764ea944a02ef94bf48, type: 2}
   m_sharedMaterial: {fileID: -1294163301250996452, guid: 2bce98e747db7764ea944a02ef94bf48, type: 2}
@@ -757,7 +757,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.07383336, y: 0.062000003}
   m_AnchorMax: {x: 1, y: 0.92560446}
-  m_AnchoredPosition: {x: -16, y: 6.0352936}
+  m_AnchoredPosition: {x: -40, y: 6.0352936}
   m_SizeDelta: {x: 30.647598, y: -0.7751007}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &445145776
@@ -1272,7 +1272,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -317, y: 62}
+  m_AnchoredPosition: {x: -317, y: 66}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &957524608
@@ -3005,7 +3005,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -317, y: -174}
+  m_AnchoredPosition: {x: -317, y: -180}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1857684225
@@ -3122,7 +3122,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1874166547
 RectTransform:
   m_ObjectHideFlags: 0
