@@ -9507,7 +9507,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.41189584, y: 0.5}
   m_AnchorMax: {x: 0.6931875, y: 0.57600003}
-  m_AnchoredPosition: {x: 169.00024, y: -65}
+  m_AnchoredPosition: {x: 169.00024, y: -54}
   m_SizeDelta: {x: 392.9635, y: 65.28999}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &368499585
@@ -15868,10 +15868,10 @@ RectTransform:
   - {fileID: 1919822568}
   m_Father: {fileID: 2018465411}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.43964577, y: 0.41214818}
-  m_AnchorMax: {x: 0.59164596, y: 0.5}
-  m_AnchoredPosition: {x: -24, y: -8}
-  m_SizeDelta: {x: 92.8826, y: 52.49}
+  m_AnchorMin: {x: 0.40300003, y: 0.37781483}
+  m_AnchorMax: {x: 0.60672915, y: 0.5194444}
+  m_AnchoredPosition: {x: 4, y: -4}
+  m_SizeDelta: {x: -6.117401, y: -5.5099983}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &569496212
 MonoBehaviour:
@@ -58778,7 +58778,7 @@ MonoBehaviour:
   - {fileID: 298307671}
   - {fileID: 150044418}
   _timeToLose: {fileID: 57514571}
-  _timeToLoseValue: 60
+  _timeToLoseValue: 75
   _enemiesToShootText: {fileID: 1100072160}
   _enemiesToShootValue: 7
   ammoText: {fileID: 1605169272}

@@ -8,20 +8,7 @@ public class GameManager : MonoBehaviour
 
     private void Awake()
     {
-        ManageSingleton();
-    }
-
-    private void ManageSingleton()
-    {
-        if (Instance == null)
-        {
-            Instance = this;
-            DontDestroyOnLoad(gameObject);
-        }
-        else
-        {
-            Destroy(gameObject);
-        }
+        Instance = this;
     }
 
     public void ActivateWeaponObject(int slot)
